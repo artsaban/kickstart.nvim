@@ -176,7 +176,7 @@ vim.keymap.set('i', 'jj', '<Esc>')
 -- Diagnostic keymaps
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
-vim.keymap.set('n', '<C-f>', ':silent !tmux neww tmux-sessionizer<CR>', { desc = 'Open tmux sessionizer', silent = true, noremap = true })
+vim.keymap.set('n', '<C-f>', ':silent !tmux neww tmux-sessionizer.sh<CR>', { desc = 'Open tmux sessionizer', silent = true, noremap = true })
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
@@ -859,7 +859,7 @@ require('lazy').setup({
     init = function()
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
-      vim.cmd.colorscheme 'catppuccin-macchiato'
+      vim.cmd.colorscheme 'catppuccin-latte'
 
       -- You can configure highlights by doing something like:
       vim.cmd.hi 'Comment gui=none'
